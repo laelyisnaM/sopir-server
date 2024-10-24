@@ -9,14 +9,14 @@ class SopirModel extends Model
     protected $table      = 'sopir'; // Nama tabel sopir
     protected $primaryKey = 'id_sopir'; // Primary key dari tabel
     protected $allowedFields = [
+        'id_sopir',
         'nik_sopir', 
         'nama_sopir', 
-        'pnomor_telepon', 
+        'nomor_telepon', 
         'email', 
         'alamat', 
         'status_sopir', 
-        'tarif_per_hari', 
-        'created_at'
+        'tarif_per_hari'
     ]; 
     
     // Method untuk mengambil semua data sopir
